@@ -47,7 +47,7 @@
    ###  Step 6: Deploy WAR File
     Copy the WAR file from the target directory to Tomcat’s webapps:
 
-cp /home/ubuntu/Train-Ticket-Reservation-System/target/*.war /opt/apache/webapps/
+     cp /home/ubuntu/Train-Ticket-Reservation-System/target/*.war /opt/apache/webapps/
 
  Tomcat will auto-deploy the WAR on next startup or immediately if it's running.
       
@@ -55,7 +55,7 @@ cp /home/ubuntu/Train-Ticket-Reservation-System/target/*.war /opt/apache/webapps
 
             http://<your-server-ip>:8080/<project-name>    
 
-      
+![](./images/TrainTicket%20booking.png)
 
 
 

@@ -4,65 +4,65 @@
 
 
 
-# 1. Install pip for Python 3 and verify its version
+### 1. Install pip for Python 3 and verify its version
 sudo apt install python3-pip -y
 ls
 pip3 --version
 
-# 2. Install required Python packages from requirements.txt (if applicable)
+### 2. Install required Python packages from requirements.txt (if applicable)
 sudo pip3 install -r requirements.txt
 
-# 3. Create a virtual environment in the project directory
+### 3. Create a virtual environment in the project directory
 python3 -m venv venv
 
-# 4. (Optional) Install Python3.12-venv if required by your system
+### 4. (Optional) Install Python3.12-venv if required by your system
 sudo apt install python3.12-venv
 
-# 5. Activating the virtual environment
-# Note: Do not use sudo with source. Ensure you are in the correct directory.
+### 5. Activating the virtual environment
+  Note: Do not use sudo with source. Ensure you are in the correct directory.
 cd ~
 source venv/bin/activate
 
-# 6. Navigate into your Flask app directory (Flask-App)
+### 6. Navigate into your Flask app directory (Flask-App)
 cd ~/Flask-App
 
-# 7. (Optional) Re-create or confirm the virtual environment in the project folder
+### 7. (Optional) Re-create or confirm the virtual environment in the project folder
 python3 -m venv venv
 source venv/bin/activate
 
-# 8. Install Flask and other dependencies inside the virtual environment
+### 8. Install Flask and other dependencies inside the virtual environment
 pip3 install flask
 
-# 9. Run the Flask development server
+### 9. Run the Flask development server
 python3 app.py
 
-# 10. Install Gunicorn, the WSGI HTTP server for running your Flask app
+### 10. Install Gunicorn, the WSGI HTTP server for running your Flask app
 pip install gunicorn
 
-# 11. Test Gunicorn manually by running:
+### 11. Test Gunicorn manually by running:
 gunicorn --bind 0.0.0.0:8000 app:app
 
-# 12. Create and edit the systemd service file for your Flask app
+### 12. Create and edit the systemd service file for your Flask app
 sudo nano /etc/systemd/system/flask-app.service
 
-# 13. Reload systemd to recognize the new service file
+### 13. Reload systemd to recognize the new service file
 sudo systemctl daemon-reload
 
-# 14. Enable the service (set to start automatically at boot)
+### 14. Enable the service (set to start automatically at boot)
 sudo systemctl enable flask-app
 
-# 15. Start the service
+### 15. Start the service
 sudo systemctl start flask-app
 
-# 16. Check the status of your service
+### 16. Check the status of your service
 sudo systemctl status flask-app
 
-# 17. Follow the logs for the Flask app service
+### 17. Follow the logs for the Flask app service
 sudo journalctl -u flask-app -f
 
-# 18. Allow incoming traffic on port 8000 (if using ufw or another firewall)
+### 18. Allow incoming traffic on port 8000 (if using ufw or another firewall)
 sudo ufw allow 8000
-
+=========================================
 
 ### 1. Install pip and Create a Virtual Environment
  Install pip for Python 3:
