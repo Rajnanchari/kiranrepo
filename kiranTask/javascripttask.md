@@ -61,5 +61,5 @@ sudo cp -r /home/ubuntu/CollectTracker/client/build/* /var/www/html/
 
 #Once artifact is copied, we can test the app on the browser 
 
-
+![](./images/CollecTracker.png)
 
